@@ -14,5 +14,5 @@ Welcome to Pristine Oasis! This is the official website for our clothing brand, 
 Pristine Oasis is dedicated to providing high-quality, fashionable clothing for all occasions. We believe in the perfect blend of comfort and style.
 
 ## Contact
-For inquiries, please contact us at [link text eliezertimaiyo@gmail.com](mailto:eliezertimaiyo@gmail.com).
+For inquiries, please contact us at [eliezertimaiyo@gmail.com](mailto:eliezertimaiyo@gmail.com).
 
