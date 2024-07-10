@@ -15,4 +15,3 @@ Pristine Oasis is dedicated to providing high-quality, fashionable clothing for 
 
 ## Contact
 
-For inquiries, please contact us at [link text eliezertimaiyo@gmail.com]
