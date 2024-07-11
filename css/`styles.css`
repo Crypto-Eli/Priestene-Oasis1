@@ -1,12 +1,13 @@
 body {
-    background-image: url('../images/logo.png');
-    background-size: cover; 
+    background-image: url('/Priestene-Oasis1/images/logo.png');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
+
 
 header {
     background-color: rgba(0, 0, 0, 0.8);
