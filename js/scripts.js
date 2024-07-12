@@ -1,40 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cart = [];
-    
-    document.querySelectorAll('.add-to-cart').forEach(button => {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+
+    addToCartButtons.forEach(button => {
         button.addEventListener('click', () => {
             const product = button.getAttribute('data-product');
-            const price = button.getAttribute('data-price');
-            
+            const price = parseFloat(button.getAttribute('data-price'));
+
             cart.push({ product, price });
             alert(`${product} has been added to your cart.`);
             updateCart();
         });
     });
-    
-    function updateCart() {
-        const cartContainer = document.getElementById('cart');
-        cartContainer.innerHTML = ''; // Clear existing cart items
-        
-        cart.forEach(item => {
-            const cartItem = document.createElement('div');
-            cartItem.className = 'cart-item';
-            cartItem.textContent = `${item.product} - $${item.price}`;
-            cartContainer.appendChild(cartItem);
-        });
-    }
-});
-document.addEventListener('DOMContentLoaded', () => {
-    const cart = [];
-    const buttons = document.querySelectorAll('.add-to-cart');
 
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            const product = button.getAttribute('data-product');
-            const price = button.getAttribute('data-price');
-            cart.push({ product, price });
-            console.log(`Added ${product} - $${price} to cart.`);
-            // You can update the cart UI or store the cart in localStorage here.
+    const updateCart = () => {
+        cartItemsContainer.innerHTML = '';
+        let total = 0;
+
+        cart.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.className = 'cart-item';
+            itemElement.textContent = `${item.product} - $${item.price.toFixed(2)}`;
+            cartItemsContainer.appendChild(itemElement);
+            total += item.price;
         });
+
+        cartTotal.textContent = total.toFixed(2);
+    };
+
+    document.getElementById('checkout').addEventListener('click', () => {
+        alert('Proceeding to checkout...');
     });
 });
