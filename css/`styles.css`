@@ -48,7 +48,12 @@ hi, h2 {
     text-align: center
 }
 
-#contact {
-    text-align: center;
+#contact a {
+    color: #ffcc00; 
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
 
