@@ -17,6 +17,9 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="cart-icon" onclick="openCart()">
+            <img src="images/cart-icon.png" alt="Cart" width="30">
+        </div>
     </header>
     <main id="home">
         <h1>Welcome to Prietene Oasis</h1>
@@ -52,17 +55,20 @@
         </div>
         <!-- Add more products as needed -->
     </section>
-    <section id="cart">
-        <h2>Shopping Cart</h2>
-        <div id="cart-items"></div>
-        <p>Total: $<span id="cart-total">0.00</span></p>
-        <button id="checkout">Checkout</button>
-    </section>
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Get in touch with us at: <a href="mailto:eliezertimaiyo@gmail.com">eliezertimaiyo@gmail.com</a></p>
-        <p>Follow us on Instagram: <a href="https://www.instagram.com/pristine_oasis" target="_blank">@pristine_oasis.</a></p>
+        <p>Follow us on Instagram: <a href="https://www.instagram.com/PristineOasis.co" target="_blank">@PristineOasis.co</a></p>
     </section>
+    <div id="cartSidebar" class="cart-sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
+        <div class="cart-sidebar-content">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout">Proceed to Checkout</button>
+        </div>
+    </div>
     <script src="js/scripts.js"></script>
 </body>
 </html>
