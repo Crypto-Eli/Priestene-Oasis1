@@ -1,8 +1,8 @@
 body {
-    background-color: #2e003e !important; 
+    background-color: #2e003e !important; /* Dark glossy shade of purple */
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     color: white;
 }
 
@@ -43,12 +43,12 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-.main, section {
+main, section {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     margin: 10px;
     border-radius: 8px;
-    color: black; 
+    color: black; /* Ensures text is readable on the white background of sections */
 }
 
 h1, h2 {
@@ -71,7 +71,7 @@ h1, h2 {
 }
 
 .add-to-cart {
-    background-color: #2e003e; 
+    background-color: #2e003e; /* Dark glossy shade of purple */
     color: white;
     border: none;
     padding: 10px;
@@ -80,42 +80,42 @@ h1, h2 {
 }
 
 .add-to-cart:hover {
-    background-color: #4b007d; 
+    background-color: #4b007d; /* Slightly lighter shade of purple */
 }
 
 .cart-sidebar {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 0;
     height: 100%;
-    background-color: rgba(46, 0, 62, 0.9);
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     color: white;
 }
 
-.cart-sidebar-content {
-    margin: 20px;
-}
-
-.cart-sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.cart-sidebar a:hover {
-    color: #f1f1f1;
-}
-
 .cart-sidebar .closebtn {
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 25px;
     font-size: 36px;
+}
+
+.cart-sidebar-content {
+    padding: 20px;
+}
+
+.cart-sidebar-content h2 {
+    margin-top: 0;
+}
+
+.cart-sidebar-content p {
+    margin: 5px 0;
+}
+
+#cart-items {
+    margin-bottom: 20px;
 }
