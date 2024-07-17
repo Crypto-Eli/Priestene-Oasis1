@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
         cartItemsContainer.innerHTML = "";
         let total = 0;
 
-        cart.forEach((item, index) => {
+        cart.forEach((item) => {
             const itemElement = document.createElement("div");
-            itemElement.innerText = `${item.product} - $${item.price.toFixed(2)}`;
+            itemElement.innerText = `${item.product} - ksh${item.price.toFixed(2)}`;
             cartItemsContainer.appendChild(itemElement);
             total += item.price;
         });
