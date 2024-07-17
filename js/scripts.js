@@ -1,9 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     const cart = [];
 
     const addToCartButtons = document.querySelectorAll(".add-to-cart");
     const cartItemsContainer = document.getElementById("cart-items");
     const cartTotal = document.getElementById("cart-total");
+    const cartSidebar = document.getElementById("cartSidebar");
 
     addToCartButtons.forEach(button => {
         button.addEventListener("click", () => {
@@ -32,12 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById("checkout").addEventListener("click", () => {
         alert("Proceeding to checkout...");
     });
+
+    window.openCart = () => {
+        cartSidebar.style.width = "25%";
+    };
+
+    window.closeCart = () => {
+        cartSidebar.style.width = "0";
+    };
 });
-
-function openCart() {
-    document.getElementById("cartSidebar").style.width = "25%";
-}
-
-function closeCart() {
-    document.getElementById("cartSidebar").style.width = "0";
-}
