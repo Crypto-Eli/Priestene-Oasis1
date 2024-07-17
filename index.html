@@ -8,64 +8,63 @@
 </head>
 <body>
     <header>
+        <h1>Welcome to Prietene Oasis</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#shirts">Shirts</a></li>
-                <li><a href="#sweatshirts">Sweatshirts</a></li>
-                <li><a href="#hoodies">Hoodies</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shirts.html">Shirts</a></li>
+                <li><a href="sweatshirts.html">Sweatshirts</a></li>
+                <li><a href="hoodies.html">Hoodies</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="cart-icon" onclick="openCart()">
+                🛒 <!-- You can replace this with an actual cart icon image if preferred -->
+            </div>
         </nav>
-        <div class="cart-icon" onclick="openCart()">
-            <img src="images/cart-icon.png" alt="Cart" width="30">
-        </div>
     </header>
-    <main id="home">
-        <h1>Welcome to Prietene Oasis</h1>
-        <p>Your go-to shop for the latest in fashion.</p>
+
+    <main>
+        <section>
+            <h2>Shirts</h2>
+            <div class="product">
+                <h3>Stylish Shirt</h3>
+                <img src="images/products/shirt1.jpg" alt="Stylish Shirt">
+                <p>300ksh</p>
+                <button class="add-to-cart" data-product="Stylish Shirt" data-price="20.00">Add to Cart</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Sweatshirts</h2>
+            <div class="product">
+                <h3>Cozy Sweatshirt</h3>
+                <img src="images/products/sweatshirt1.jpg" alt="Cozy Sweatshirt">
+                <p>450ksh</p>
+                <button class="add-to-cart" data-product="Cozy Sweatshirt" data-price="25.00">Add to Cart</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hoodies</h2>
+            <div class="product">
+                <h3>Comfy Hoodie</h3>
+                <img src="images/products/hoodie1.jpg" alt="Comfy Hoodie">
+                <p>700ksh</p>
+                <button class="add-to-cart" data-product="Comfy Hoodie" data-price="30.00">Add to Cart</button>
+            </div>
+        </section>
     </main>
-    <section id="shirts">
-        <h2>Shirts</h2>
-        <div class="product">
-            <img src="images/products/shirt1.jpg" alt="Shirt 1">
-            <h3>Stylish Shirt</h3>
-            <p>$20.00</p>
-            <button class="add-to-cart" data-product="Stylish Shirt" data-price="20.00">Add to Cart</button>
-        </div>
-    </section>
-    <section id="sweatshirts">
-        <h2>Sweatshirts</h2>
-        <div class="product">
-            <img src="images/products/sweatshirt1.jpg" alt="Sweatshirt 1">
-            <h3>Cozy Sweatshirt</h3>
-            <p>$25.00</p>
-            <button class="add-to-cart" data-product="Cozy Sweatshirt" data-price="25.00">Add to Cart</button>
-        </div>
-    </section>
-    <section id="hoodies">
-        <h2>Hoodies</h2>
-        <div class="product">
-            <img src="images/products/hoodie1.jpg" alt="Hoodie 1">
-            <h3>Comfy Hoodie</h3>
-            <p>$30.00</p>
-            <button class="add-to-cart" data-product="Comfy Hoodie" data-price="30.00">Add to Cart</button>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us at: <a href="mailto:eliezertimaiyo@gmail.com">eliezertimaiyo@gmail.com</a></p>
-        <p>Follow us on Instagram: <a href="https://www.instagram.com/pristine_oasis" target="_blank">@pristine_oasis</a></p>
-    </section>
+
     <div id="cartSidebar" class="cart-sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeCart()">&times;</a>
         <div class="cart-sidebar-content">
             <h2>Your Cart</h2>
             <div id="cart-items"></div>
-            <p>Total: $<span id="cart-total">0.00</span></p>
+            <p>Total: ksh<span id="cart-total">0.00</span></p>
             <button id="checkout">Proceed to Checkout</button>
         </div>
     </div>
+
     <script src="js/scripts.js"></script>
 </body>
 </html>
