@@ -102,20 +102,31 @@ h1, h2 {
     top: 20px;
     right: 25px;
     font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
 }
 
 .cart-sidebar-content {
-    padding: 20px;
+    margin: 20px;
 }
 
-.cart-sidebar-content h2 {
-    margin-top: 0;
+#cart-items div {
+    padding: 10px;
+    border-bottom: 1px solid #444;
 }
 
-.cart-sidebar-content p {
-    margin: 5px 0;
+#checkout {
+    background-color: #2e003e;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
 }
 
-#cart-items {
-    margin-bottom: 20px;
+#checkout:hover {
+    background-color: #4b007d;
 }
